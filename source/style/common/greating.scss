@@ -25,3 +25,23 @@
 .greating_picture.m--show {
   transform: translate3D(0, 0, 0);
 }
+.wrap {
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+  border: 1px solid #196F3D;
+}
+
+.icon {
+
+  fill: none;
+  stroke: red;
+  &:hover{
+    stroke: green;
+  }
+}
+.spritepng{
+  
+}
