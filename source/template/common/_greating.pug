@@ -1,1 +1,65 @@
-.write Привет
+header.page-header
+	a.page-header__logo
+		img.page-header__logo-image(src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»")
+	nav.main-nav
+		button.main-nav__toggle(type="button") Открыть меню
+		.main-nav__wrapper
+			ul.main-nav__list.site-list
+				li.site-list__item.site-list__item--active
+					a(href="index.html") Главная
+				li.site-list__item
+					a(href="photo.html") Наши работы
+				li.site-list__item
+					a(href="form.html") Записаться
+				li.site-list__item
+					a(href="#") Контакты
+				li.site-list__item
+					a(href="#") WebAiKiDo
+			ul.main-nav__list.user-list
+				li.user-list__item
+					a.user-list__login(href="login.html") Войти
+	main.page-main
+		h1.visually-hidden Барбершоп «Бородинский» - истинно мужская классика
+		section.stats
+			header.stats__header
+				h2.visually-hidden Статистика Барбершопа
+				b.stats__slogan Стрижка у нас это выгодно!
+				p.stats__intro Мужская стрижка требует точного подхода. Обратимся к статистике
+				small.stats__legend.stats__legend--top
+					sup *
+					| -приведенные данные ложь
+			table.stats__list
+				tr
+					td.stats__value 1 500
+						sup *
+					td.stats__field рублей<br> вложений
+				tr
+					td.stats__value 7 200
+					td.stats__field секунд<br> времени мастера
+				tr
+					td.stats__value 90 000
+					td.stats__field постриженных<br> волос
+				tr
+					td.stats__value 500 000
+						sup *
+					td.stats__field лайков<br> и комплиментов
+			small.stats__legend.stats__legend--bottom
+				sup *
+				| - приведеные данные ложь
+		section.advantages
+			.advantages__wrapper.slider
+				h2.visually-hidden Наши преимущества
+				ul.advantages__list.slider__list
+					li.advantages__item.advantages__item--fast.slider__item
+						h3.advantages__titel Быстро
+						p.advantages__description Мы даелаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
+					li.advantages__item.advantages__item--fast.slider__item
+						h3.advantages__titel Круто
+						p.advantages__description Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+					li.advantages__item.advantages__item--fast.slider__item
+						h3.advantages__titel Дорого
+						p.advantages__description Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определенной статус?
+				p.advantages__toggles.sleder__toggles
+					button.slider__toggle(type="button") 1
+					button.slider__toggle(type="button") 2
+					button.slider__toggle(type="button") 3
