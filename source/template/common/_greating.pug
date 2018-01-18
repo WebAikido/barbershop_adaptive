@@ -1,7 +1,7 @@
 header.page-header
 	a.page-header__logo
 		img.page-header__logo-image(src="assets/img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»")
-	nav.main-nav
+	nav.main-nav.main-nav--closed.main-nav--nojs
 		button.main-nav__toggle(type="button")
 			span.visually-hidden Открыть меню
 		.main-nav__wrapper
@@ -18,113 +18,117 @@ header.page-header
 					a(href="#") WebAiKiDo
 			ul.main-nav__list.user-list
 				li.user-list__item
-					a.user-list__login(href="login.html") Войти
-main.page-main
-	h1.visually-hidden Барбершоп «Бородинский» - истинно мужская классика
-	section.stats
-		header.stats__header
-			h2.visually-hidden Статистика Барбершопа
-			b.stats__slogan Стрижка у нас это выгодно!
-			p.stats__intro Мужская стрижка требует точного подхода. Обратимся к статистике
-			small.stats__legend.stats__legend--top
+					a.user-list__login(href="login.html")
+						svg.user-list__login-icon(width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16")
+							polygon(points='0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7')
+							polygon(points='7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0')
+						| Войти
+	main.page-main
+		h1.visually-hidden Барбершоп «Бородинский» - истинно мужская классика
+		section.stats
+			header.stats__header
+				h2.visually-hidden Статистика Барбершопа
+				b.stats__slogan Стрижка у нас это выгодно!
+				p.stats__intro Мужская стрижка требует точного подхода. Обратимся к статистике
+				small.stats__legend.stats__legend--top
+					sup *
+					| -приведенные данные ложь
+			table.stats__list
+				tr
+					td.stats__value 1 500
+						sup *
+					td.stats__field рублей<br> вложений
+				tr
+					td.stats__value 7 200
+					td.stats__field секунд<br> времени мастера
+				tr
+					td.stats__value 90 000
+					td.stats__field постриженных<br> волос
+				tr
+					td.stats__value 500 000
+						sup *
+					td.stats__field лайков<br> и комплиментов
+			small.stats__legend.stats__legend--bottom
 				sup *
-				| -приведенные данные ложь
-		table.stats__list
-			tr
-				td.stats__value 1 500
-					sup *
-				td.stats__field рублей<br> вложений
-			tr
-				td.stats__value 7 200
-				td.stats__field секунд<br> времени мастера
-			tr
-				td.stats__value 90 000
-				td.stats__field постриженных<br> волос
-			tr
-				td.stats__value 500 000
-					sup *
-				td.stats__field лайков<br> и комплиментов
-		small.stats__legend.stats__legend--bottom
-			sup *
-			| - приведеные данные ложь
-	section.advantages
-		.advantages__wrapper.slider
-			h2.visually-hidden Наши преимущества
-			ul.advantages__list.slider__list
-				li.advantages__item.advantages__item--fast.slider__item
-					h3.advantages__titel Быстро
-					p.advantages__description Мы даелаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
-				li.advantages__item.advantages__item--fast.slider__item
-					h3.advantages__titel Круто
-					p.advantages__description Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
-				li.advantages__item.advantages__item--fast.slider__item
-					h3.advantages__titel Дорого
-					p.advantages__description Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определенной статус?
-			p.advantages__toggles.sleder__toggles
-				button.slider__toggle(type="button") 1
-				button.slider__toggle(type="button") 2
-				button.slider__toggle(type="button") 3
-	section.news
-		.news__wrapper
-			h2.news__title Новости и акции
-			ul.news__list
-				li.news__item
-					time(datetime="2017-11-16").news__date
-						b.news__day 19
-						| сент
-					p.news__text Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.
-				li.news__item
-					time(datetime="2017-11-16").news__date
-						b.news__day 19
-						| сент
-					p.news__text В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши ряды. Спешите записаться!
-				li.news__item
-					time(datetime="2017-11-16").news__date
-						b.news__day 19
-						| сент
-					p.news__text Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем разница!
-				a.news__to-all.button(herf="") Показать все
-	section.rewies
-		.rewies__wrapper.slider
-			h2.rewies__titel Отзывы о нас
-			a.rewies__write.button(href="#")
-			.rewies__list.slider__list
-				blockquote.rewies__item.slider__item
-					p.rewies__author-picture
-						img.rewies__author-images(src="assets/img/travis.jpg" width="50" height="33" alt="фото Тревиса Баркера")
-					cite.rewise__author-name Тревис Баркер
-					p.rewies__tetx Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-				blockquote.rewies__item.slider__item
-					p.rewies__author-picture
-						img.rewies__author-images(src="assets/img/diesel.jpg" width="50" height="33" alt="Фото Джона Смита")
-					cite.rewise__author-name Джон Смит
-					p.rewies__tetx Отличную стрижку мне сделали ребята.
-				blockquote.rewies__item.slider__item
-					p.rewies__author-picture
-						img.rewies__author-images(src="assets/img/boroda.jpg" width="50"  alt="Фото Ивана Бородайлоа")
-					cite.rewise__author-name Иван Бородайло
-					p.rewies__tetx В Бородинском ваша борода в надёжных руках!
-			p.rewies__toggles.slider__toggles
-				button.slider__toggle(type="button") 1
-				button.slider__toggle(type="button") 2
-				button.slider__toggle(type="button") 3
-footer.page-footer
-	.page-footer__wrapper
-		.page-footer__contacts.contacts
-			b.contacts__title Барбершоп «Бородинский»
-			p.contacts__text г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-				a.contacts__phone(href="tel:+78123456780")
-					span.contacts__phone-mobile Тел.:
-					| +7(812)345-67-80
-		.page-footer__social.social
-			b.social__title Давайте дружить!
-			ul.social__list
-				li.social__item
-					a.social__link.social__link--vkontakte(href="#") Мы в Вконтакте	
-				li.social__item
-					a.social__link.social__link--vkontakte(href="#") Мы в Фейсбуке
-				li.social__item
-					a.social__link.social__link--vkontakte(href="#") Мы в Инстаграме
-		.page-footer__copyright.copyright
-			b.copyright__text Разработано:
-			a.button.copyright__link(href="#") HTML Academy
+				| - приведеные данные ложь
+		section.advantages
+			.advantages__wrapper.slider
+				h2.visually-hidden Наши преимущества
+				ul.advantages__list.slider__list
+					li.advantages__item.advantages__item--fast.slider__item
+						h3.advantages__titel Быстро
+						p.advantages__description Мы даелаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
+					li.advantages__item.advantages__item--fast.slider__item
+						h3.advantages__titel Круто
+						p.advantages__description Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+					li.advantages__item.advantages__item--fast.slider__item
+						h3.advantages__titel Дорого
+						p.advantages__description Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определенной статус?
+				p.advantages__toggles.sleder__toggles
+					button.slider__toggle(type="button") 1
+					button.slider__toggle(type="button") 2
+					button.slider__toggle(type="button") 3
+		section.news
+			.news__wrapper
+				h2.news__title Новости и акции
+				ul.news__list
+					li.news__item
+						time(datetime="2017-11-16").news__date
+							b.news__day 19
+							| сент
+						p.news__text Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.
+					li.news__item
+						time(datetime="2017-11-16").news__date
+							b.news__day 19
+							| сент
+						p.news__text В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши ряды. Спешите записаться!
+					li.news__item
+						time(datetime="2017-11-16").news__date
+							b.news__day 19
+							| сент
+						p.news__text Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем разница!
+					a.news__to-all.button(herf="") Показать все
+		section.rewies
+			.rewies__wrapper.slider
+				h2.rewies__titel Отзывы о нас
+				a.rewies__write.button(href="#")
+				.rewies__list.slider__list
+					blockquote.rewies__item.slider__item
+						p.rewies__author-picture
+							img.rewies__author-images(src="assets/img/travis.jpg" width="50" height="33" alt="фото Тревиса Баркера")
+						cite.rewise__author-name Тревис Баркер
+						p.rewies__tetx Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+					blockquote.rewies__item.slider__item
+						p.rewies__author-picture
+							img.rewies__author-images(src="assets/img/diesel.jpg" width="50" height="33" alt="Фото Джона Смита")
+						cite.rewise__author-name Джон Смит
+						p.rewies__tetx Отличную стрижку мне сделали ребята.
+					blockquote.rewies__item.slider__item
+						p.rewies__author-picture
+							img.rewies__author-images(src="assets/img/boroda.jpg" width="50"  alt="Фото Ивана Бородайлоа")
+						cite.rewise__author-name Иван Бородайло
+						p.rewies__tetx В Бородинском ваша борода в надёжных руках!
+				p.rewies__toggles.slider__toggles
+					button.slider__toggle(type="button") 1
+					button.slider__toggle(type="button") 2
+					button.slider__toggle(type="button") 3
+	footer.page-footer
+		.page-footer__wrapper
+			.page-footer__contacts.contacts
+				b.contacts__title Барбершоп «Бородинский»
+				p.contacts__text г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+					a.contacts__phone(href="tel:+78123456780")
+						span.contacts__phone-mobile Тел.:
+						| +7(812)345-67-80
+			.page-footer__social.social
+				b.social__title Давайте дружить!
+				ul.social__list
+					li.social__item
+						a.social__link.social__link--vkontakte(href="#") Мы в Вконтакте	
+					li.social__item
+						a.social__link.social__link--vkontakte(href="#") Мы в Фейсбуке
+					li.social__item
+						a.social__link.social__link--vkontakte(href="#") Мы в Инстаграме
+			.page-footer__copyright.copyright
+				b.copyright__text Разработано:
+				a.button.copyright__link(href="#") HTML Academy
