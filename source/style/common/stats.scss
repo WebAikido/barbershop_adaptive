@@ -1,0 +1,40 @@
+.stats{
+	width: 320px;
+	margin: 0 auto;
+}
+.stats__hedader{
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 25px;
+	padding-left: 40px;
+
+	color: #000000;
+	background-color: #ffffff;
+}
+.stats__slogan{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+stats__legend--bottom{
+	padding-top: 20px;
+	padding-bottom: 14px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.3);
+	background-color: $bg-darkgrey;
+}
+.stats__legend--top{
+	display: none;
+}
+.stats__legend sup{
+	top: -0.25em;
+	font-size: 90%;
+}
+.stats__list{
+	width: 100%;
+	border-collapse: collapse;
+}
