@@ -34,10 +34,14 @@ body{
 	color: #f7f4f1; 
 	font-style: normal;
 	background-color: $bg-darkgrey;
+  margin: 8px;
 }
-img{
+/*img{
 	max-width: 100%;
 	height: auto;
+}*/
+table{
+  border-collapse: collapse;
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

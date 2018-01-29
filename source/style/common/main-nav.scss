@@ -1,9 +1,10 @@
 .main-nav{
 	position: relative;
 
-	width: 320px;
+	//width: 320px;
+	width: auto;
 	min-height: 51px;
-	margin: 0 auto;
+	//margin: 0 auto;
 	background-color: #826550;
 }
 .main-nav__toggle{
@@ -20,6 +21,7 @@
 
 	cursor: pointer;
 	border: none;
+	outline: none;
 
 	&:hover, &:active{
 		background-color: #624530;
@@ -166,7 +168,9 @@
 	.main-nav__wrapper{
 		display: flex;
 		justify-content: space-between;
-		width: 640px;
+		//width: 640px;
+		width: 84%;
+		min-width: 640px;
 		margin: 0 auto;
 	}
 	.main-nav__toggle{
