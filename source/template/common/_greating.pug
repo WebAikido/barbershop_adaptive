@@ -1,6 +1,9 @@
 header.page-header
 	a.page-header__logo
-		img.page-header__logo-image(src="assets/img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»")
+		picture
+			source(media="(min-width: 1200px)" srcset="assets/img/logotype-desktop.svg")
+			source(media="(min-width: 768px)" srcset="assets/img/logotype-tablet.svg")
+			img(src="assets/img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»")
 	nav.main-nav.main-nav--closed.main-nav--nojs
 		button.main-nav__toggle(type="button")
 			span.visually-hidden Открыть меню
@@ -54,20 +57,23 @@ main.page-main
 	section.advantages
 		.advantages__wrapper.slider
 			h2.visually-hidden Наши преимущества
+			input.slider__input#advantages-input-1(name="advantages" type="radio" checked)
+			input.slider__input#advantages-input-2(name="advantages" type="radio")
+			input.slider__input#advantages-input-3(name="advantages" type="radio")
 			ul.advantages__list.slider__list
 				li.advantages__item.advantages__item--fast.slider__item
 					h3.advantages__titel Быстро
 					p.advantages__description Мы даелаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
-				li.advantages__item.advantages__item--fast.slider__item
+				li.advantages__item.advantages__item--awesome.slider__item
 					h3.advantages__titel Круто
 					p.advantages__description Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
-				li.advantages__item.advantages__item--fast.slider__item
+				li.advantages__item.advantages__item--expensive.slider__item
 					h3.advantages__titel Дорого
 					p.advantages__description Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определенной статус?
-			p.advantages__toggles.sleder__toggles
-				button.slider__toggle(type="button") 1
-				button.slider__toggle(type="button") 2
-				button.slider__toggle(type="button") 3
+			.advantages__toggles.slider__toggles
+				label.slider__toggle( for="advantages-input-1") 1
+				label.slider__toggle( for="advantages-input-2") 2
+				label.slider__toggle( for="advantages-input-3") 3
 	section.news
 		.news__wrapper
 			h2.news__title Новости и акции
