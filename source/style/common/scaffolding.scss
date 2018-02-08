@@ -55,6 +55,11 @@ table{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.page-main{
+ background-color: #353535;
+}
+
 .slider {
   position: relative;
 }
@@ -90,7 +95,5 @@ table{
 }
 
 .slider__input {
-  position: absolute;
-
-  opacity: 0;
+  display: none;
 }
