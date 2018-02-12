@@ -154,5 +154,38 @@
     width: 80%; /*960px / 1200px = 80%*/
     max-width: 2000px;
     margin: 0 auto;
+    padding-left: 30px;
+}
+.advantages__item{
+  display: table-cell;
+  padding: 0 40px;
+  padding-top: 130px;
+  border-right: 1px solid #4a4a4a;
+
+  &:last-child{
+    border: none;
+  }
+  &:nth-child(2){
+  width: 260px;
+  }
+
+  &:before{
+
+    top: 0;
+    left: 50%;
+  }
+
+  &:after{
+    content: none;
+  }
+}
+.advantages__list{
+  padding: 0;
+}
+.advantages__titel{
+  text-align: center;
+}
+.advantages__description{
+  text-align: center;
 }
 }
