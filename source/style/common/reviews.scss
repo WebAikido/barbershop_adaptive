@@ -96,3 +96,40 @@
   #reviews-input-3:checked~ .reviews__list .slider__item:nth-child(3) {
       display: block;
   }
+  @media (min-width: $tablet-width){
+  	.reviews__wrapper{
+  	width: 84%; /*640px / 768px ~= 84%*/
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+	
+	.reviews__titel{
+		font-size: 40px;
+	}
+	.reviews__prev{
+		display: block;
+		order: -1;
+	}
+	.reviews__next{
+		display: block;
+	}
+	.reviews__write{
+		display: block;
+	}
+	.reviews__list{
+		display: flex;
+		order: 3;
+		.button{
+		font-size: 0;
+		height: 100%;
+		width: 48px;
+		}
+	}
+	.reviews__item{
+		width: 100%;
+	}
+
+}
