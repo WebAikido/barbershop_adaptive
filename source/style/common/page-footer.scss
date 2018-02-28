@@ -89,3 +89,8 @@
 .copyright__text{
 	font-weight: lighter;
 }
+@media (min-width: $tablet-width){
+	.page-footer__wrapper{
+		display: flex;
+	}
+}
