@@ -217,6 +217,11 @@
     padding-left: 30px;
     padding-bottom: 85px;
 	}
+	.reviews{
+		&:after{
+			content: none;
+		}
+	}
 	.reviews__item{
 		margin-left: 20px;
 		margin-right: 20px;
