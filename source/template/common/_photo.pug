@@ -45,32 +45,84 @@ main.inner-page
 					li.portfolio__service-item.portfolio__service-item--cut Стрижка
 					li.portfolio__service-item.portfolio__service-item--beard Бритьё
 					li.portfolio__service-item.portfolio__service-item--mustache Усы
-		article.portfolio__item.portfolio__item--work-of-month
+		article.portfolio__item
 			picture
-				source(media="(min-width: 1200px)", srcset="assets/img/photo-1-desktop.jpg")
-				source(media="(min-width: 768px)", srcset="assets/img/photo-1-tablet.jpg")
-				img.portfolio__foto(src="assets/img/photo-1-mobile.jpg", alt="Лжепётр Мчиславский")
-			.portfolio__mount-tag Работа месяца
+				source(media="(min-width: 1200px)", srcset="assets/img/photo-2-desktop.jpg")
+				source(media="(min-width: 768px)", srcset="assets/img/photo-2-tablet.jpg")
+				img.portfolio__foto(src="assets/img/photo-2-mobile.jpg", alt="Саша Мальцев")
 			.portfolio__desc
-				b.portfolio__item_name Лжепётр Мчиславский
-				p.portfolio__feedback Где я&nbsp;только ни&nbsp;стригся, но&nbsp;так как делаете это вы&nbsp;&mdash; не&nbsp;умеет никто другой! Еще раз спасибо и&nbsp;до скорого!
+				b.portfolio__item_name Саша Мальцев
+				p.portfolio__feedback Попросил омолодить и&nbsp;омолодили! Кто теперь скажет, что мне 45?
 				ul.portfolio__service-list
 					li.portfolio__service-item.portfolio__service-item--cut Стрижка
+		article.portfolio__item
+			picture
+				source(media="(min-width: 1200px)", srcset="assets/img/photo-3-desktop.jpg")
+				source(media="(min-width: 768px)", srcset="assets/img/photo-3-tablet.jpg")
+				img.portfolio__foto(src="assets/img/photo-3-mobile.jpg", alt="Владимир Иваныч")
+			.portfolio__desc
+				b.portfolio__item_name Владимир Иваныч
+				p.portfolio__feedback К зимнему сезону — готов!
+				ul.portfolio__service-list
 					li.portfolio__service-item.portfolio__service-item--beard Бритьё
 					li.portfolio__service-item.portfolio__service-item--mustache Усы
-		article.portfolio__item.portfolio__item--work-of-month
+		article.portfolio__item
 			picture
-				source(media="(min-width: 1200px)", srcset="assets/img/photo-1-desktop.jpg")
-				source(media="(min-width: 768px)", srcset="assets/img/photo-1-tablet.jpg")
-				img.portfolio__foto(src="assets/img/photo-1-mobile.jpg", alt="Лжепётр Мчиславский")
-			.portfolio__mount-tag Работа месяца
+				source(media="(min-width: 1200px)", srcset="assets/img/photo-4-desktop.jpg")
+				source(media="(min-width: 768px)", srcset="assets/img/photo-4-tablet.jpg")
+				img.portfolio__foto(src="assets/img/photo-4-mobile.jpg", alt="Винстон Синий")
 			.portfolio__desc
-				b.portfolio__item_name Лжепётр Мчиславский
-				p.portfolio__feedback Где я&nbsp;только ни&nbsp;стригся, но&nbsp;так как делаете это вы&nbsp;&mdash; не&nbsp;умеет никто другой! Еще раз спасибо и&nbsp;до скорого!
+				b.portfolio__item_name Винстон Синий
+				p.portfolio__feedback Как только заростаю и&nbsp;волосы начинают мешать видеть&nbsp;&mdash; бегом в&nbsp;Бородинский!
 				ul.portfolio__service-list
 					li.portfolio__service-item.portfolio__service-item--cut Стрижка
-					li.portfolio__service-item.portfolio__service-item--beard Бритьё
-					li.portfolio__service-item.portfolio__service-item--mustache Усы
+	section.price
+		.price__wrapper
+			b.prise__title Прескурант
+			.price__columns
+				table.price__table
+					tr
+						td.price__col-1 1
+						td.price__col-2 Классическая стрижка
+						td.price__col-3
+							span.price__bkt (
+							| с мытьём головы
+							span.price__bkt )
+						td.price__col-4 1500 руб.
+					tr
+						td.price__col-1 2
+						td.price__col-2 Современный вариант
+						td.price__col-3
+							span.price__bkt (
+							| с мытьём головы
+							span.price__bkt )
+						td.price__col-4 1500 руб.
+					tr
+						td.price__col-1 3
+						td.price__col-2 Индивидуальный подход
+						td.price__col-3
+							span.price__bkt (
+							| с мытьём головы
+							span.price__bkt )
+						td.price__col-4 2000 руб.
+					tr
+						td.price__col-1 4
+						td.price__col-2 Бритьё головы
+						td.price__col-3
+							span.price__bkt (
+							| без мытья головы
+							span.price__bkt )
+						td.price__col-4 500 руб.
+					tr
+						td.price__col-1 5
+						td.price__col-2 Бритьё головы
+						td.price__col-3
+							span.price__bkt (
+							| с мытьём головы
+							span.price__bkt )
+						td.price__col-4 1000 руб.
+				.price__discount
+					p.price__discount-desc C&nbsp;10:00 до&nbsp;14:00 скидка 20%
 	footer.page-footer
 		.page-footer__wrapper
 			.page-footer__contacts.contacts
