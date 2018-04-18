@@ -1,0 +1,64 @@
+/*.portfolio{
+	padding-top: 30px;
+	padding-bottom: 34px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.inner-page{
+	background-color: #f8f5f2;
+	color: #000;
+}
+.portfolio__slogan{
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.button--home{
+	display: none;
+}
+.portfolio__header{
+	text-align: center;
+	margin-bottom: 20px;
+}*/
+.inner-page{
+	background-color: #f8f5f2;
+	color: #000;
+}
+.portfolio__header{
+	margin: 0 auto;
+	padding: 30px 0px;
+	color: #000;
+	text-transform: uppercase;
+}
+.button--home{
+	display: none;
+}
+.portfolio__slogan{
+	margin: 0;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+.portfolio{
+	position: relative;
+	padding-bottom: 14px;
+}
+.portfolio__item{
+	margin-bottom: 20px;
+	color: #000;
+	padding: 0 20px;
+}
+.portfolio__item--work-of-month{
+	position: relative;
+}
+.portfolio__item--work-of-month .portfoli-item__image-wrapper{
+	height: 480px;
+}
+.portfoli-item__image-wrapper{
+	text-align: center;
+	background-color: #e6ded6;
+}
