@@ -46,20 +46,22 @@ main.inner-page
 					li.portfolio__service-item.portfolio__service-item--beard Бритьё
 					li.portfolio__service-item.portfolio__service-item--mustache Усы
 		article.portfolio__item
-			picture
-				source(media="(min-width: 1200px)", srcset="assets/img/photo-2-desktop.jpg")
-				source(media="(min-width: 768px)", srcset="assets/img/photo-2-tablet.jpg")
-				img.portfolio__foto(src="assets/img/photo-2-mobile.jpg", alt="Саша Мальцев")
+			p.portfoli-item__image-wrapper
+				picture
+					source(media="(min-width: 1200px)", srcset="assets/img/photo-2-desktop.jpg")
+					source(media="(min-width: 768px)", srcset="assets/img/photo-2-tablet.jpg")
+					img.portfolio__foto(src="assets/img/photo-2-mobile.jpg", alt="Саша Мальцев")
 			.portfolio__desc
 				b.portfolio__item_name Саша Мальцев
 				p.portfolio__feedback Попросил омолодить и&nbsp;омолодили! Кто теперь скажет, что мне 45?
 				ul.portfolio__service-list
 					li.portfolio__service-item.portfolio__service-item--cut Стрижка
 		article.portfolio__item
-			picture
-				source(media="(min-width: 1200px)", srcset="assets/img/photo-3-desktop.jpg")
-				source(media="(min-width: 768px)", srcset="assets/img/photo-3-tablet.jpg")
-				img.portfolio__foto(src="assets/img/photo-3-mobile.jpg", alt="Владимир Иваныч")
+			p.portfoli-item__image-wrapper
+				picture
+					source(media="(min-width: 1200px)", srcset="assets/img/photo-3-desktop.jpg")
+					source(media="(min-width: 768px)", srcset="assets/img/photo-3-tablet.jpg")
+					img.portfolio__foto(src="assets/img/photo-3-mobile.jpg", alt="Владимир Иваныч")
 			.portfolio__desc
 				b.portfolio__item_name Владимир Иваныч
 				p.portfolio__feedback К зимнему сезону — готов!
@@ -67,10 +69,11 @@ main.inner-page
 					li.portfolio__service-item.portfolio__service-item--beard Бритьё
 					li.portfolio__service-item.portfolio__service-item--mustache Усы
 		article.portfolio__item
-			picture
-				source(media="(min-width: 1200px)", srcset="assets/img/photo-4-desktop.jpg")
-				source(media="(min-width: 768px)", srcset="assets/img/photo-4-tablet.jpg")
-				img.portfolio__foto(src="assets/img/photo-4-mobile.jpg", alt="Винстон Синий")
+			p.portfoli-item__image-wrapper
+				picture
+					source(media="(min-width: 1200px)", srcset="assets/img/photo-4-desktop.jpg")
+					source(media="(min-width: 768px)", srcset="assets/img/photo-4-tablet.jpg")
+					img.portfolio__foto(src="assets/img/photo-4-mobile.jpg", alt="Винстон Синий")
 			.portfolio__desc
 				b.portfolio__item_name Винстон Синий
 				p.portfolio__feedback Как только заростаю и&nbsp;волосы начинают мешать видеть&nbsp;&mdash; бегом в&nbsp;Бородинский!
@@ -78,7 +81,7 @@ main.inner-page
 					li.portfolio__service-item.portfolio__service-item--cut Стрижка
 	section.price
 		.price__wrapper
-			b.prise__title Прескурант
+			b.price__title Прескурант
 			.price__columns
 				table.price__table
 					tr

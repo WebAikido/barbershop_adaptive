@@ -47,6 +47,19 @@
 	position: relative;
 	padding-bottom: 14px;
 }
+.portfolio::after{
+	content: "";
+    position: absolute;
+    right: 0;
+    bottom: -34px;
+    z-index: 10;
+    width: 100%;
+    height: 34px;
+    background-image: linear-gradient(to top right, transparent 50%, #f8f5f2 50%), linear-gradient(to top left, transparent 50%, #f8f5f2 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+    background-size: 50.2% 100%;
+}
 .portfolio__item{
 	margin-bottom: 20px;
 	color: #000;
@@ -63,6 +76,7 @@
 	text-align: center;
 	background-color: #e6ded6;
 	margin-bottom: 0;
+	height: 176px;
 }
 .portfolio__item--work-of-month{
 	position: relative;
@@ -152,4 +166,110 @@
 }
 .portfolio__service-item--mustache::before{
 	background-image: url("../img/mustache-icon.svg");
+}
+.portfolio__item{
+	margin-bottom: 20px;
+	padding: 0 20px;
+	color: #000;
+}
+.price{
+	position: relative;
+    padding-top: 70px;
+    padding-bottom: 19px;
+    color: #ffffff;
+    background-color: #353535
+}
+.price::after{
+	content: "";
+    position: absolute;
+    right: 0;
+    bottom: -34px;
+    z-index: 10;
+    width: 100%;
+    height: 34px;
+    background-image: linear-gradient(to top right, transparent 50%, #353535 50%), linear-gradient(to top left, transparent 50%, #353535 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+    background-size: 50.2% 100%;
+}
+.price__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.price__title {
+  display: block;
+  margin-bottom: 23px;
+
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price__table{
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 27px;
+  tbody {
+    display: block;
+  }
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+  }
+  td {
+    display: block;
+    padding: 0 5px;
+  }
+  .price__col-1 {
+    display: none;
+  }
+
+  .price__col-2 {
+    padding-left: 0;
+    font-weight: bold;
+  }
+  .price__col-3 {
+    order: 4;
+    width: 100%;
+    padding-left: 0;
+  }
+  .price__col-4 {
+    padding-right: 0;
+  }
+}
+.price__discount {
+  position: relative;
+  height: 48px;
+  padding: 20px 10px;
+  padding-left: 110px;
+
+  border: 1px solid #4a4a4a;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 57px;
+    height: 57px;
+
+    border-radius: 50%;
+    background-image: url(../img/clock_illustration.svg);
+    background-repeat: no-repeat;
+
+    transform: translateY(-50%);
+  }
+.price__discount-desc {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-right: 35px;
+
+  font-size: 20px;
+}
 }
