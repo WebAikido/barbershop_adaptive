@@ -1,0 +1,112 @@
+header.page-header
+	a.page-header__logo
+		picture
+			source(media="(min-width: 1200px)" srcset="assets/img/logotype-desktop.svg")
+			source(media="(min-width: 768px)" srcset="assets/img/logotype-tablet.svg")
+			img(src="assets/img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»")
+	nav.main-nav.main-nav--closed.main-nav--nojs
+		button.main-nav__toggle(type="button")
+			span.visually-hidden Открыть меню
+		.main-nav__wrapper
+			ul.main-nav__list.site-list
+				li.site-list__item
+					a(href="index.html") Главная
+				li.site-list__item.site-list__item--active
+					a(href="photo.html") Наши работы
+				li.site-list__item
+					a(href="form.html") Записаться
+				li.site-list__item
+					a(href="#") Контакты
+				li.site-list__item
+					a(href="#") WebAiKiDo
+			ul.main-nav__list.user-list
+				li.user-list__item
+					a.user-list__login(href="login.html")
+						svg.user-list__login-icon(width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16")
+							polygon(points='0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7')
+							polygon(points='7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0')
+						| Войти
+main.inner-page
+	section.order
+		header.order__header
+			h2.order__titel.visually-hidden Форма записи на стрижку
+			b.order__slogan Запись на стрижку
+			a.button.button--home(href="index.html") На главную
+		form.order-form
+			.order-form__contacts
+				.order-form__name
+					input.order-form__field.order-form__field--name(type='text', name='surname', placeholder='Фамилия')
+					input.order-form__field.order-form__field--name(type='text', name='name', placeholder='Имя')
+					input.order-form__field.order-form__field--name(type='text', name='patronymic', placeholder='Отчество')
+				.order-form__communications
+					input.order-form__field.order-form__field--communications(type='tel', name='tel', placeholder='Контактный телефон')
+					input.order-form__field.order-form__field--communications(type='email', name='email', placeholder='Контактный e-mail')
+				.order-form__information
+					textarea.order-form__field.order-form__field--information(name='info-for-master', placeholder='Доп. информация для мастера', rows='5')
+			.order-form__beard-model
+				.order-form__title
+					b Выберите модель бороды:
+				ul.order-form__list.order-form__list--model
+					li
+						input#admiral.order-form__field.order-form__field--model.checked(type='radio', name='model')
+						label.order-form__label.order-form__label--model(for='admiral') адмирал
+						img(src='assets/img/beard-1.svg', width='52', height='49', alt='Стиль «Адмирал»')
+					li
+						input#lumberjack.order-form__field.order-form__field--model(type='radio', name='model')
+						label.order-form__label.order-form__label--model(for='lumberjack') лесоруб
+						img(src='assets/img/beard-2.svg', width='58', height='68', alt='Стиль «Лесоруб»')
+					li
+						input#polar-explorer.order-form__field.order-form__field--model(type='radio', name='model')
+						label.order-form__label.order-form__label--model(for='polar-explorer') полярник
+						img(src='assets/img/beard-3.svg', width='63', height='78', alt='Стиль «Полярник»')
+					li
+						input#lord.order-form__field.order-form__field--model(type='radio', name='model')
+						label.order-form__label.order-form__label--model(for='lord') боярин
+						img(src='assets/img/beard-4.svg', width='57', height='97', alt='Стиль «Боярин»')
+					li
+						input#wiseman.order-form__field.order-form__field--model(type='radio', name='model')
+						label.order-form__label.order-form__label--model(for='wiseman') мудрец
+						img(src='assets/img/beard-5.svg', width='45', height='104', alt='Стиль «Мудрец»')
+			.order-form__additional-service
+				.order-form__title.order-form__title--additional-service
+					b Дополнительные услуги:
+				ul.order-form__list.order-form__list--additional
+					li
+						input#color-beard.order-form__field.order-form__field--additional.checked(type='checkbox', name='additional')
+						label.order-form__label.order-form__label--additional(for='color-beard') Подкрасить бороду
+					li
+						input#twirl-mustache.order-form__field.order-form__field--additional(type='checkbox', name='additional')
+						label.order-form__label.order-form__label--additional(for='twirl-mustache') Накрутить усы
+					li
+						input#comb-beard.order-form__field.order-form__field--additional(type='checkbox', name='additional')
+						label.order-form__label.order-form__label--additional(for='comb-beard') Причесать бороду
+					li
+						input#align-temple.order-form__field.order-form__field--additional(type='checkbox', name='additional')
+						label.order-form__label.order-form__label--additional(for='align-temple') Подровнять виски
+					li
+						input#remove-graying.order-form__field.order-form__field--additional(type='checkbox', name='additional')
+						label.order-form__label.order-form__label--additional(for='remove-graying') Убрать седину
+					li
+						input#polish-bald-spot.order-form__field.order-form__field--additional(type='checkbox', name='additional')
+						label.order-form__label.order-form__label--additional(for='polish-bald-spot') Отполировать лысину
+			button.button.order-form__button(type='submit') Отправить заявку
+	footer.page-footer
+		.page-footer__wrapper
+			.page-footer__contacts.contacts
+				b.contacts__title Барбершоп «Бородинский»
+				p.contacts__text г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+					a.contacts__phone.button(href="tel:+78123456780")
+						span.contacts__phone-mobile Тел.:
+						| +7(812)345-67-80
+			.page-footer__social.social
+				b.social__title Давайте дружить!
+				ul.social__list
+					li.social__item
+						a.social__link.social__link--vkontakte(href="#") Мы в Вконтакте	
+					li.social__item
+						a.social__link.social__link--facebook(href="#") Мы в Фейсбуке
+					li.social__item
+						a.social__link.social__link--twitter(href="#") Мы в Инстаграме
+			.page-footer__copyright.copyright
+				b.copyright__text Разработано:
+				a.button.copyright__link(href="#") WebAiKiDo
